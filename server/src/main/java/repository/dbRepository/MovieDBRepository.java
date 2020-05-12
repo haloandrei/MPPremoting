@@ -25,7 +25,7 @@ public class MovieDBRepository implements SortingRepository<Integer, Movie> {
     public void setValidator(Validator<Movie> validator){
         this.validator=validator;
     }
-
+    //finds all movies
     @Override
     public Iterable<Movie> findAll(Sort sort) {
         ArrayList<Movie> result = new ArrayList<>((Collection<? extends Movie>) findAll());

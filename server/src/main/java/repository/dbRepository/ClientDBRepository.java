@@ -29,7 +29,7 @@ public class ClientDBRepository implements SortingRepository<Integer, Client> {
     public void setValidator(Validator<Client> validator) {
         this.validator = validator;
     }
-
+    //finds all clients
     @Override
     public Iterable<Client> findAll(Sort sort) {
         ArrayList<Client> result = new ArrayList<>((Collection<? extends Client>) findAll());

@@ -38,7 +38,7 @@ public class AcquisitionDBRepository implements SortingRepository<Integer, Acqui
         return Optional.empty();
     }
 
-
+    //finds all acquisitions
     @Override
     public Iterable<Acquisition> findAll() {
         String sql = "select * from acquisition;";
