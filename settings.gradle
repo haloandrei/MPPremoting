@@ -1,0 +1,5 @@
+rootProject.name = 'movie-project'
+include 'common'
+include 'server'
+include 'client'
+
