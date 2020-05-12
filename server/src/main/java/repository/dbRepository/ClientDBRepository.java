@@ -89,7 +89,7 @@ public class ClientDBRepository implements SortingRepository<Integer, Client> {
         Optional.ofNullable(entity).orElseThrow(() -> new IllegalArgumentException("Entity must not be null"));
         validator.validate(entity);
         String sql = "insert into client values (?,?,?);";
-        jdbcOperations.update(sql, entity.getId(), entity.getName(), entity.getAge());
+        jdbcOperations.update(sql, entity.getId(), entity.getName(), String.valueOf(entity.getAge()));
         return client;
     }
 
