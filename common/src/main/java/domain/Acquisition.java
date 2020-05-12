@@ -35,8 +35,8 @@ public class Acquisition extends BaseEntity<Integer> implements Serializable {
     public String toString() {
         return "Acquisition{" +
                 "id=" + this.getId() +
-                ", movieId=" + movieId +
-                ", clientId=" + clientId +
+                ", movie_Id=" + movieId +
+                ", client_Id=" + clientId +
                 '}';
     }
 }
